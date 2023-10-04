@@ -8,16 +8,37 @@
         <link rel="stylesheet" href="./app.css" />
         <script src="./main.js" defer></script>
     </head>
+
     <body>
         <div class="wrapper">
             <div class="sliders">
-                <fieldset>
-                    <legend>Lorem ipsum</legend>
-
-                    <label>Červená <input type="range" id="color-red" value="0" min="0" max="255" step="1" /></label>
-                    <label>Zelená <input type="range" id="color-green" value="0" min="0" max="255" step="1" /></label>
-                    <label>Modrá <input type="range" id="color-blue" value="0" min="0" max="255" step="1" /></label>
-                </fieldset>
+                <input
+                    type="range"
+                    id="color-red"
+                    value="0"
+                    min="0"
+                    max="255"
+                    step="1"
+                    style="--input-color: rgb(255, 0, 0)"
+                />
+                <input
+                    type="range"
+                    id="color-green"
+                    value="0"
+                    min="0"
+                    max="255"
+                    step="1"
+                    style="--input-color: rgb(0, 255, 0)"
+                />
+                <input
+                    type="range"
+                    id="color-blue"
+                    value="0"
+                    min="0"
+                    max="255"
+                    step="1"
+                    style="--input-color: rgb(0, 0, 255); margin-bottom: 0px"
+                />
             </div>
         </div>
     </body>
