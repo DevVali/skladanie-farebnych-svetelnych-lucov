@@ -18,26 +18,28 @@ html {
     font-size: 20px;
 }
 
-img.emoji {
-    width: 200px;
-    margin-right: 25px;
-}
-
 div.wrapper {
     display: flex;
-    flex-direction: row;
     margin: 0;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
+div.sim {
+    position: relative;
+    left: 100px;
+}
+img.emoji {
+    width: 200px;
+    margin-right: 25px;
+}
 div.sliders {
     width: 200px;
     transform: rotate(270deg);
-    margin-left: 25px;
+    position: relative;
+    left: 450px;
 }
-
 input[type="range"] {
     -webkit-appearance: none;
     appearance: none;
