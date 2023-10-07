@@ -18,20 +18,20 @@ html {
     font-size: 20px;
 }
 
-div.wrapper {
-    margin: 96px 128px;
-}
-
 img.emoji {
-    width: 16px;
+    width: 200px;
     margin: 0 0.8px 0 1.6px;
     vertical-align: -1.6px;
 }
 
-div.sliders {
+div.wrapper {
+    margin: 0;
     position: absolute;
-    right: 0;
-    margin: auto 128px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+div.sliders {
     width: 200px;
     transform: rotate(270deg);
 }
