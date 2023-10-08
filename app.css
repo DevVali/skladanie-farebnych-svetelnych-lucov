@@ -60,3 +60,14 @@ input[type="range"]::-webkit-slider-thumb {
     border-radius: 1000px;
     border: 2px solid rgb(255, 255, 255);
 }
+
+footer {
+    position: fixed;
+    bottom: 0;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    margin: 0;
+    padding: 14px 16px;
+    float: left;
+    width: 100%;
+}
