@@ -5,10 +5,16 @@
     margin: 0;
 }
 
+:root {
+    --black: rgb(0, 0, 0);
+    --white: rgb(255, 255, 255);
+    --font: "Montserrat", sans-serif;
+}
+
 html {
-    background-color: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
-    font-family: "Montserrat", sans-serif;
+    background-color: var(--black);
+    color: var(--white);
+    font-family: var(--font);
     font-size: 20px;
 }
 
@@ -29,7 +35,7 @@ div.sliders {
     width: 200px;
     transform: rotate(270deg);
     position: relative;
-    left: 450px;
+    left: 500px;
 }
 
 input[type="range"] {
@@ -58,14 +64,14 @@ input[type="range"]::-webkit-slider-thumb {
     height: 25px;
     width: 25px;
     border-radius: 1000px;
-    border: 2px solid rgb(255, 255, 255);
+    border: 2px solid var(--white);
 }
 
 footer {
     position: fixed;
     bottom: 0;
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
+    background-color: var(--white);
+    color: var(--black);
     margin: 0;
     padding: 14px 16px;
     float: left;

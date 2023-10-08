@@ -8,6 +8,8 @@ const colors = [
 
 colors.forEach((elem) => {
     elem.addEventListener("input", () => {
-        document.querySelector("#eye-iris").style.fill = `rgb(${colors[0].value}, ${colors[1].value}, ${colors[2].value})`;
+        document.querySelector(
+            "#eye-iris"
+        ).style.fill = `rgb(${colors[0].value}, ${colors[1].value}, ${colors[2].value})`;
     });
 });
