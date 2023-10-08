@@ -1,7 +1,13 @@
 "use strict";
 
-// Twemoji
-twemoji.parse(document.body, {
-    folder: "svg",
-    ext: ".svg",
+const colors = [
+    document.querySelector("#slider-red"),
+    document.querySelector("#slider-green"),
+    document.querySelector("#slider-blue"),
+];
+
+colors.forEach((elem) => {
+    elem.addEventListener("change", () => {
+        document.querySelector("#eye-iris").style.fill = `rgb(${colors[0].value}, ${colors[1].value}, ${colors[2].value})`;
+    });
 });
