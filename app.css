@@ -73,7 +73,6 @@ input[type="range"]::-webkit-slider-thumb {
     border: 2px solid var(--white);
 }
 input[type="range"]::-moz-range-thumb {
-    -webkit-appearance: none;
     appearance: none;
 
     margin-top: 0px;
