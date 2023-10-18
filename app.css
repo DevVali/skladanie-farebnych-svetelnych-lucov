@@ -54,7 +54,25 @@ input[type="range"]::-webkit-slider-runnable-track {
     height: 25px;
     border-radius: 100px;
 }
+input[type="range"]::-moz-range-track {
+    background-image: linear-gradient(90deg, rgb(0, 0, 0), var(--slider-color));
+
+    height: 25px;
+    border-radius: 100px;
+}
 input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+
+    margin-top: 0px;
+
+    background-color: var(--slider-color);
+    height: 25px;
+    width: 25px;
+    border-radius: 1000px;
+    border: 2px solid var(--white);
+}
+input[type="range"]::-moz-range-thumb {
     -webkit-appearance: none;
     appearance: none;
 
